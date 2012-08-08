@@ -19,7 +19,7 @@ body {
   right:850px;
 }
 
-.search-item input {
+.search-item button {
   font-family: monospace;
   font-size: 100%;
   position:absolute;

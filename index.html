@@ -6,10 +6,10 @@
     <meta http-equiv="pragma" content="no-cache">
     <title>WeatherApp</title>
     <link rel="stylesheet" type="text/css" href="style/weather.css"/>
+     <script type="text/javascript" src="js/weather.js"></script>
     <style>
     </style>
   </head>
-  <script type="text/javascript" src="js/weather.js"></script>
   <body>
 	<div id="top">
 		<div class="location">
@@ -17,11 +17,11 @@
 		</div>
 		<div class="text-box">
 			<form>
-				<input type="text" name="newlocation" size="25" />
+				<input type="text" size="25" id="type_box" />
 			</form>
 		</div>
 		<div class="search-item">
-			<input type="button" value="Go"/>
+			<button onclick= readTextBox()>Go</button>
 		</div>
 	</div>
 	<div id="middle">
