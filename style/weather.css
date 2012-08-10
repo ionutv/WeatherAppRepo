@@ -1,33 +1,13 @@
-* {
-  -moz-box-sizing: border-box;
+#type_box
+{ width: 85%;
+}
+.data.ui-footer.ui-bar-a {
+	bottom: 0;
+        height: 55px;
+        line-height: 35px;
+        position: absolute;
+        text-align: center;
+        width: 100%;
+
 }
 
-body {
-	background-color:white;
-}
-
-.location h3 {
-	text-align:center;
-	color:yellow;
-}
-
-.text-box input {
-  font-family: 'Open Sans', sans-serif;
-  font-weight: 400;
-  text-align:center;
-  position:absolute;
-  right:850px;
-}
-
-.search-item button {
-  font-family: monospace;
-  font-size: 100%;
-  position:absolute;
-  right:800px;
-  top:58px;
-  background: #65a9d7;
-  font-size: 11px;
-  font-family: Georgia, Serif;
-  padding: 4px 10px;
-  -moz-border-radius: 20px;
-}

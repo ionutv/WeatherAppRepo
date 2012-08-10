@@ -3,35 +3,51 @@
 
   <head>
     <meta charset="utf-8">
-    <meta http-equiv="pragma" content="no-cache">
-    <title>WeatherApp</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="style/weather.css" />
+	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.1.1/jquery.mobile-1.1.1.min.css" />
+	<script src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
+	<script src="http://code.jquery.com/mobile/1.1.1/jquery.mobile-1.1.1.min.js"></script>
+	<title>WeatherApp</title>
     <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
-    <link rel="stylesheet" type="text/css" href="style/weather.css"/>
      <script type="text/javascript" src="js/weather.js"></script>
   </head>  
   <body> 
+       <div data-role="page" data-theme="a">
 	<div id="top">
-		<div class="location">
-			<h3>Change Location</h3>
+		<div data-role="content" align="center">
+		<div data-role="header">
+			<h3>Enter Location</h3>
 		</div>
 		<div class="text-box">
 			<form>
-				<input type="text" size="25" id="type_box" />
+				<input type="text" id="type_box" style="text-align:center"/>
 			</form>
 		</div>
-		<div class="search-item">
-			<button onclick="readCurrentWeatherConditions()">Go</button>
+		<div class="search-item" >
+			<input type="button" name="go" id="go" value="Go" onclick="readCurrentWeatherConditions()" data-icon="arrow-r" data-iconpos="right" data-inline="true" data-theme="d"/>
 		</div>
 	</div>
-	<div>
-    <label for="tempFa">Weather:</label><br/>
-	  <img id="icon" src=""/><br/>
+	<div align="center"></br></br>
+    <label id="now" for="tempFa">Now:</label><br/>
+	  <img id="icon" src="" width="50" height="50"/><br/>
 	  <span id="tempFa"></span>
-</div>
-	<div id="middle">
+    </div>
+    <div align="center"></br>
+    <label for="general">Today general info:</label><br/>
+	  <img id="icongen" src="" width="50" height="50"/><br/>
+	  <span id="general"></span>
+    </div>
+    <div data-role="footer" role="contentinfo" class="data ui-footer ui-bar-a">
+	<input type="button" name="back" id="back" value="Back" onclick="backF();" data-icon="arrow-l" data-iconpos="left" data-inline="true" data-theme="d"/>
+	<input type="button" name="tomorrow" id="tomorrow" value="Tomorrow" onclick="readTomorrowWeatherConditions()" data-icon="arrow-r" data-iconpos="right" data-inline="true" data-theme="d"/>
 	</div>
-	<div id="bottom">
-	</div>
-  </body>
+   <div align = "center"></br>
+	<label for="tom"></label><br/>
+	<img id="asa" src="" width="50" height="50"/><br/>
+	<span id="tom"></span>
+    </div>
 
+  </div>
+</body>
 </html>
