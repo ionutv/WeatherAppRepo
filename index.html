@@ -5,12 +5,11 @@
     <meta charset="utf-8">
     <meta http-equiv="pragma" content="no-cache">
     <title>WeatherApp</title>
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
     <link rel="stylesheet" type="text/css" href="style/weather.css"/>
      <script type="text/javascript" src="js/weather.js"></script>
-    <style>
-    </style>
-  </head>
-  <body>
+  </head>  
+  <body> 
 	<div id="top">
 		<div class="location">
 			<h3>Change Location</h3>
@@ -21,9 +20,14 @@
 			</form>
 		</div>
 		<div class="search-item">
-			<button onclick= readTextBox()>Go</button>
+			<button onclick="readCurrentWeatherConditions()">Go</button>
 		</div>
 	</div>
+	<div>
+    <label for="tempFa">Weather:</label><br/>
+	  <img id="icon" src=""/><br/>
+	  <span id="tempFa"></span>
+</div>
 	<div id="middle">
 	</div>
 	<div id="bottom">
